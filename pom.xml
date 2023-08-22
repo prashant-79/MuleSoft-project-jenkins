@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+	<modelVersion>3.6.3</modelVersion>
 
 	<groupId>com.mycompany</groupId>
 	<artifactId>demo-cicd-10june2021</artifactId>
@@ -16,7 +16,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 		<app.runtime>4.3.0-20210427</app.runtime>
-		<mule.maven.plugin.version>3.5.1</mule.maven.plugin.version>
+		<mule.maven.plugin.version>4.0.0</mule.maven.plugin.version>
 	</properties>
 
 	<build>
