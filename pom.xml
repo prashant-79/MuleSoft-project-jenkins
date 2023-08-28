@@ -57,11 +57,6 @@ $$<?xml version="1.0" encoding="UTF-8"?>
                         <artifactId>jaxrs-code-generator</artifactId>
                         <version>2.0.0</version>
                 </dependency>
-		<dependency>
-			<groupId>org.mule.connectors</groupId>
-			<artifactId>mule-sockets-connector</artifactId>
-			<version>1.2.3</version>
-			<classifier>mule-plugin</classifier>
 		</dependency>
 	</dependencies>
 
