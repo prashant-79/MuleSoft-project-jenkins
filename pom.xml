@@ -38,7 +38,7 @@
                         <applicationName>mulesoft1</applicationName>
                         <environment>Sandbox</environment>
                         <workers>1</workers>
-                        <workerType>Small</workerType>
+                        <workerType>Micro</workerType>
                     </cloudHubDeployment>
                 </configuration>
             </plugin>
