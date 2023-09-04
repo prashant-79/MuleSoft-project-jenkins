@@ -17,7 +17,7 @@
         <mule.maven.plugin.version>3.8.2</mule.maven.plugin.version>
         <!-- Add the sonar.coverage.jacoco.xmlReportPaths property here -->
         <sonar.coverage.jacoco.xmlReportPaths>
-            ../app-project-name/target/jacoco-report/jacoco.xml
+            ../MULESOFT/target/jacoco-report/jacoco.xml
         </sonar.coverage.jacoco.xmlReportPaths>	
     </properties>
 
