@@ -39,6 +39,10 @@
                         <environment>Sandbox</environment>
                         <workers>1</workers>
                         <workerType>Micro</workerType>
+			<repository>
+                            <id>anypoint-exchange-v3</id>
+                            <url>https://maven.anypoint.mulesoft.com/api/v3/maven//your.repo.url</url>
+                        </repository>    
                     </cloudHubDeployment>
                 </configuration>
             </plugin>
