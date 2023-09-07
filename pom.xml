@@ -15,6 +15,7 @@
 
         <app.runtime>4.4.0</app.runtime>
         <mule.maven.plugin.version>3.8.2</mule.maven.plugin.version>
+        <sonar.jacoco.reportPath>/var/lib/jenkins/workspace/mulesoft-project/target/jacoco.exec</sonar.jacoco.reportPath>
     </properties>
 
     <build>
@@ -45,7 +46,7 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.7</version>
+                <version>0.8.6</version>
                 <executions>
                     <execution>
                         <goals>
@@ -82,6 +83,11 @@
             <artifactId>mule-objectstore-connector</artifactId>
             <version>1.2.1</version>
             <classifier>mule-plugin</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.jacoco</groupId> 
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.6</version>
         </dependency>
     </dependencies>
 
