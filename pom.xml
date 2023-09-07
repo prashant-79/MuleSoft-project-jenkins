@@ -15,7 +15,6 @@
 
         <app.runtime>4.4.0</app.runtime>
         <mule.maven.plugin.version>3.8.2</mule.maven.plugin.version>
-        <sonar.jacoco.reportPath>/var/lib/jenkins/workspace/mulesoft-project/target/jacoco.exec</sonar.jacoco.reportPath>
     </properties>
 
     <build>
