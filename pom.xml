@@ -88,14 +88,12 @@
             <artifactId>jacoco-maven-plugin</artifactId>
             <version>0.8.6</version>
         </dependency>
-        <dependencies>
-            <!-- Other dependencies -->
-            <dependency>
-                <groupId>org.mule.tests</groupId>
-                <artifactId>mule-tests-munit</artifactId>
-                <version>2.4.1</version> <!-- Use the appropriate version -->
-                <scope>test</scope>
-            </dependency>
+        <dependency>
+            <groupId>org.mule.tests</groupId>
+            <artifactId>mule-tests-munit</artifactId>
+            <version>2.4.1</version> <!-- Use the appropriate version -->
+            <scope>test</scope>
+        </dependency>
         </dependencies>
         
     </dependencies>
