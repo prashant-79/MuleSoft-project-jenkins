@@ -26,6 +26,24 @@
                 <version>3.2.0</version>
             </plugin>
             <plugin>
+                <groupId>org.mule.tools.maven</groupId>
+                <artifactId>mule-maven-plugin</artifactId>
+                <version>3.8.2</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <cloudHubDeployment>
+                        <uri>https://anypoint.mulesoft.com</uri>
+                        <muleVersion>4.4.0</muleVersion>
+                        <username>Prashant77</username>
+                        <password>Prashant77!</password>
+                        <applicationName>mulesoft2</applicationName>
+                        <environment>Sandbox</environment>
+                        <workers>1</workers>
+                        <workerType>Micro</workerType>    
+                    </cloudHubDeployment>
+                </configuration>
+            </plugin>
+	    <plugin>
                 <groupId>com.mulesoft.munit.tools</groupId>
                 <artifactId>munit-maven-plugin</artifactId>
                 <version>2.3.6</version>
@@ -45,24 +63,6 @@
                     </goals>
                   </execution>
                 </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.mule.tools.maven</groupId>
-                <artifactId>mule-maven-plugin</artifactId>
-                <version>3.8.2</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <cloudHubDeployment>
-                        <uri>https://anypoint.mulesoft.com</uri>
-                        <muleVersion>4.4.0</muleVersion>
-                        <username>Prashant77</username>
-                        <password>Prashant77!</password>
-                        <applicationName>mulesoft2</applicationName>
-                        <environment>Sandbox</environment>
-                        <workers>1</workers>
-                        <workerType>Micro</workerType>    
-                    </cloudHubDeployment>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.jacoco</groupId>
