@@ -77,7 +77,6 @@
             </plugin>
         </plugins>
     </build>
-
     <dependencies>
         <dependency>
             <groupId>org.mule.connectors</groupId>
@@ -116,9 +115,7 @@
             <classifier>mule-plugin</classifier>
             <scope>test</scope>
         </dependency>
-        
     </dependencies>
-
     <repositories>
         <repository>
             <id>anypoint-exchange-v3</id>
@@ -131,9 +128,8 @@
             <name>MuleSoft Releases Repository</name>
             <url>https://repository.mulesoft.org/releases/</url>
             <layout>default</layout>
-        </repository>
+        </repository>  
     </repositories>
-
     <pluginRepositories>
         <pluginRepository>
             <id>mulesoft-releases</id>
