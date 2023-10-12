@@ -11,3 +11,4 @@
     </munit:behavior>
 </munit:test>
 <http:request-config name="HTTP_Request_Configuration" doc:name="HTTP Request Configuration" doc:id="b52071e9-708e-4310-a4c3-d6473a3e7075" basePath="mulesoft2.us-e2.cloudhub.io/mulesoft" />
+</munit>
