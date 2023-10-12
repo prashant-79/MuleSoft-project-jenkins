@@ -32,7 +32,7 @@
 		<configuration>
 		      <coverage>
 		        <ignoreFlows>
-		             <ignoreFlow>flow-name</ignoreFlow>
+		             <ignoreFlow>mulesoft1Flow</ignoreFlow>
 		        </ignoreFlows>
 		     </coverage>
                 </configuration>
