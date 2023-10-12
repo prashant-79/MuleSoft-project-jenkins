@@ -6,7 +6,7 @@
           <!--  <http:request method="GET" config-ref="HTTP_Request_Configuration" path="/mulesoft" doc:name="Request" doc:id="1f609132-4569-4e1d-96c2-8408945b8b06" />  -->
         </munit:execution>
         <munit:assertions >
-            <!--  <munit:assertEquals value="#[output application/java --- 'It\'s my 1st mulesoft deployment']" doc:name="Assert Payload" doc:id="d6a078d1-ba0e-4d2f-8e6c-c3b68c44efef" />
+            <!--  <munit:assertEquals value="#[output application/java --- 'It\'s my 1st mulesoft deployment']" doc:name="Assert Payload" doc:id="d6a078d1-ba0e-4d2f-8e6c-c3b68c44efef" /> -->
         </munit:assertions>
     </munit:behavior>
 </munit:test>
