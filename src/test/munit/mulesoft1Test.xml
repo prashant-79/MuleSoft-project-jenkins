@@ -1,14 +1,5 @@
 <munit>
 <munit:config name="munit" ignore="true" doc:name="MUnit configuration" doc:id="54891461-3fc2-4dd5-a9e1-cb17e09fb3ad" />
 <munit:test name="mulesoft2Test" description="Test" doc:id="8d0197d6-860a-4e23-9e3b-8231e59e5083">
-//    <munit:behavior >
-//        <munit:execution >
-//             <http:request method="GET" config-ref="HTTP_Request_Configuration" path="/mulesoft" doc:name="Request" doc:id="1f609132-4569-4e1d-96c2-8408945b8b06" />  
-//        </munit:execution>
-//        <munit:assertions >
-//             <munit:assertEquals value="#[output application/java --- 'It\'s my 1st mulesoft deployment']" doc:name="Assert Payload" doc:id="d6a078d1-ba0e-4d2f-8e6c-c3b68c44efef" /> 
-//        </munit:assertions>
-//   </munit:behavior>
 </munit:test>
-//<http:request-config name="HTTP_Request_Configuration" doc:name="HTTP Request Configuration" doc:id="b52071e9-708e-4310-a4c3-d6473a3e7075" basePath="http://mulesoft2.us-e2.cloudhub.io/mulesoft" />
 </munit>
