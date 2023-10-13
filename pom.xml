@@ -68,6 +68,7 @@
                 <version>2.3.6</version>
 		<configuration>
 		      <coverage>
+		      <runCoverage>true</runCoverage>
 			    <formats>   
 			        <format>sonar</format>   
 			    </formats>
