@@ -68,9 +68,9 @@
                 <version>2.3.6</version>
 		<configuration>
 		      <coverage>
-		        <ignoreFlows>
-		             <ignoreFlow>mulesoft1Flow</ignoreFlow>
-		        </ignoreFlows>
+			    <formats>   
+			        <format>sonar</format>   
+			    </formats>
 		     </coverage>
                 </configuration>
                 <executions>
