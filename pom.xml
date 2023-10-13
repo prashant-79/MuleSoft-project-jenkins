@@ -66,14 +66,6 @@
                 <groupId>com.mulesoft.munit.tools</groupId>
                 <artifactId>munit-maven-plugin</artifactId>
                 <version>2.3.6</version>
-		<configuration>
-		      <coverage>
-		      <runCoverage>true</runCoverage>
-			    <formats>   
-			        <format>sonar</format>   
-			    </formats>
-		     </coverage>
-                </configuration>
                 <executions>
                   <execution>
                     <id>test</id>
