@@ -7,7 +7,7 @@
     <version>1.0.0-SNAPSHOT</version>
     <packaging>mule-application</packaging>
 
-    <name>mulesoft3</name>
+    <name>mulesoft4</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -35,8 +35,8 @@
                         <uri>https://anypoint.mulesoft.com</uri>
                         <muleVersion>4.4.0</muleVersion>
                         <username>Prashant66</username>
-                        <password>Prashant66!</password>     //NOSONAR
-                        <applicationName>mulesoft3</applicationName>
+                        <password>Prashant66!</password>     
+                        <applicationName>mulesoft4</applicationName>
                         <environment>Sandbox</environment>
                         <workers>1</workers>
                         <workerType>Micro</workerType>    
