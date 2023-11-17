@@ -34,7 +34,8 @@
                     <cloudHubDeployment>
                         <uri>https://anypoint.mulesoft.com</uri>
                         <muleVersion>4.4.0</muleVersion>
-			<server>ca.anypoint.credentials</server>    
+                        <username>cloudfulcrum</username>
+                        <password>Cloud@1234</password> 
                         <applicationName>mulesoftapp</applicationName>
                         <environment>Sandbox</environment>
                         <workers>1</workers>
