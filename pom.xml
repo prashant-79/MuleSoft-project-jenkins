@@ -15,18 +15,30 @@
         <app.runtime>4.4.0</app.runtime>
         <mule.maven.plugin.version>3.8.2</mule.maven.plugin.version>
 	<munit.version>2.3.6</munit.version>
-        <coverage>
-            <runCoverage>true</runCoverage>
-            <formats>
-                <format>console</format>
-                <format>html</format>
-            </formats>
-        </coverage>
     </properties>
 
     <build>
         <plugins>
             <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.10</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+	    <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-clean-plugin</artifactId>
                 <version>3.2.0</version>
@@ -46,25 +58,6 @@
                         <workerType>Micro</workerType>    
                     </cloudHubDeployment>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.7</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>report</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
 	    <plugin>
                 <groupId>com.mulesoft.munit.tools</groupId>
