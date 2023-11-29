@@ -9,6 +9,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="mulesoft1Flow" doc:id="1f883733-4f9c-4e02-9f4f-4a4ffbbe0d0d" >
 		<http:listener doc:name="Listener" doc:id="c358c725-0ed3-48d0-9176-4b08c26447f2" config-ref="HTTP_Listener_config" path="/mulesoft"/>
-		<set-payload value='{ "user_id":"123456", "username":"johndoe", "first_name":"John", "last_name":"Doe", "email":"john.doe@example.com", "age":30, "gender":"male", "location":{ "city":"Herndon", "state":"VA", "country":"USA" }, "interests":[ "hiking", "reading", "coding" ], "friends":[ { "user_id":"789012", "username":"janedoe" }, { "user_id":"345678", "username":"bobsmith" } ] }' mimeType="application/json" encoding="UTF-8" doc:name="Set Payload" doc:id="b3f5bac1-ea2d-4c17-994f-9ad6ed1ea2a0"/>
+		<set-payload value='{ "user_id":"123456", "username":"SAM", "first_name":"John", "last_name":"Doe", "email":"john.doe@example.com", "age":30, "gender":"male", "location":{ "city":"Herndon", "state":"VA", "country":"USA" }, "interests":[ "hiking", "reading", "coding" ], "friends":[ { "user_id":"789012", "username":"janedoe" }, { "user_id":"345678", "username":"bobsmith" } ] }' mimeType="application/json" encoding="UTF-8" doc:name="Set Payload" doc:id="b3f5bac1-ea2d-4c17-994f-9ad6ed1ea2a0"/>
 	</flow>
 </mule>
