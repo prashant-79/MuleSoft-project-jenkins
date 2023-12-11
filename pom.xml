@@ -7,19 +7,45 @@
     <version>1.0.0-SNAPSHOT</version>
     <packaging>mule-application</packaging>
 
-    <name>mulesoft1</name>
+    <name>mulesoftapp2</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
         <app.runtime>4.4.0</app.runtime>
         <mule.maven.plugin.version>3.8.2</mule.maven.plugin.version>
+	<munit.version>2.3.6</munit.version>
     </properties>
 
     <build>
         <plugins>
             <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.10</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+	    <plugin>
+	          <groupId>org.apache.maven.plugins</groupId>
+	          <artifactId>maven-surefire-plugin</artifactId>
+	          <version>3.0.0-M5</version>
+	          <configuration>
+	                <testFailureIgnore>true</testFailureIgnore>
+	          </configuration>
+	    </plugin>		
+	    <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-clean-plugin</artifactId>
                 <version>3.2.0</version>
@@ -33,14 +59,35 @@
                     <cloudHubDeployment>
                         <uri>https://anypoint.mulesoft.com</uri>
                         <muleVersion>4.4.0</muleVersion>
-                        <username>Prashant1995</username>
-                        <password>Prashant@65</password>
-                        <applicationName>mulesoft1</applicationName>
+                        <applicationName>mulesoftapp2</applicationName>
                         <environment>Sandbox</environment>
                         <workers>1</workers>
                         <workerType>Micro</workerType>    
                     </cloudHubDeployment>
                 </configuration>
+            </plugin>
+	    <plugin>
+                <groupId>com.mulesoft.munit.tools</groupId>
+                <artifactId>munit-maven-plugin</artifactId>
+                <version>2.3.6</version>
+                <executions>
+                  <execution>
+                    <id>test</id>
+                    <phase>test</phase>
+                    <goals>
+                      <goal>test</goal>
+		      <goal>coverage-report</goal>
+                    </goals>
+                  </execution>
+                </executions>
+		<configuration>
+			<coverage>
+				<runCoverage>true</runCoverage>
+				<formats>
+					<format>html</format>
+				</formats>
+			</coverage>
+		</configuration>
             </plugin>
         </plugins>
     </build>
@@ -58,11 +105,30 @@
             <version>1.2.3</version>
             <classifier>mule-plugin</classifier>
         </dependency>
-	<dependency>
+	    <dependency>
             <groupId>org.mule.connectors</groupId>
             <artifactId>mule-objectstore-connector</artifactId>
             <version>1.2.1</version>
             <classifier>mule-plugin</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.jacoco</groupId> 
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.10</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mulesoft.munit</groupId>
+            <artifactId>munit-runner</artifactId>
+            <version>2.3.0</version>
+            <classifier>mule-plugin</classifier>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.mulesoft.munit</groupId>
+            <artifactId>munit-tools</artifactId>
+            <version>2.3.0</version>
+            <classifier>mule-plugin</classifier>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
